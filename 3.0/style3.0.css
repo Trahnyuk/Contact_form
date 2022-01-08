@@ -79,10 +79,14 @@ footer{
     outline:none;
     border:none;
     height:35px;   
+    padding-left:10px;
 }
 
 textarea{
     height:100px;
+    padding-top:10px;
+    padding-left:10px;
+
 }
 
 input[type="text"], input[type="email"], input[type="phone"], textarea{
@@ -168,8 +172,6 @@ input[type=submit]:hover {
     transition: 1s;
   }
 /* input submit end*/
-
-
 /*<main> End*/
 
 
@@ -223,3 +225,10 @@ a:link, a:visited  {
 }
 
 /*<footer End>*/
+
+
+/*validation start*/
+
+
+
+/*validation end*/
