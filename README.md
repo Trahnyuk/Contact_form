@@ -4,5 +4,4 @@ To Do list:
 - úprava funkcionálu "input"
 - BEM - struktura
 - přípojeni přes JS validace
-
-- control of git
+- přídat změnu jazyku z En do CZ
