@@ -10,24 +10,23 @@ nav, main, footer{
     margin: 1em 0;
 }
 
+
 nav.navigation{
-    display: flex;
+    display:flex;
     flex-direction: row;
-    border: 4px solid rgb(110, 0, 0);
+    padding:4px;
 }
+
 
 main{
     display: flex;
-    border: 4px solid rgb(180, 180, 0);
-    padding: 20px;
-    
+    padding:4px;
 }
 
 
 footer{
     display: flex;
-    border:4px solid rgb(2, 223, 2);
-    background-color:green;
+    padding:4px;
 }
 
 
@@ -35,7 +34,6 @@ footer{
 
 /*logo style Start*/
 .navigation_logo_top{
-    border: 2px solid rgb(0, 0, 78);
     width:50%;
     padding-left:1em;
 }
@@ -49,7 +47,6 @@ footer{
 
     /*Contact us style Start*/
 .navigation_contact_us{
-    border: 2px solid rgb(214, 2, 214);
     width: 50%; 
     padding-right:1em;
 }
@@ -64,15 +61,13 @@ footer{
 
 
 
-
-
 /* <main> Start*/
-.container{
+.container_main{
     border:6px solid #EB5B25;
     border-radius: 20px;
     background-color: #EB5B25;
     width:100%;
-    padding:20px;
+    padding:5px;
 }
 
 .fName, .lName, .Email, .Phone, .Textarea, .Fileinput label{
@@ -80,74 +75,151 @@ footer{
     flex-direction: column;
 }
 
-.form input, textarea{
+.form input{
     outline:none;
     border:none;
-    height:35px;
-    
+    height:35px;   
+}
+
+textarea{
+    height:100px;
+}
+
+input[type="text"], input[type="email"], input[type="phone"], textarea{
+    border-radius: 12px;
 }
 
 label{
-    padding: 10px 0 0 0 ;
+    padding: 15px 0px 5px 0 ;
 }
 
 .fName{
-    border: 2px solid red;
+    border: 2px solid yellow;
 }
 .lName{
-    border: 2px solid red;
+    border: 2px solid yellow;
 }
 
 .Email{
-    border: 2px solid red;
+    border: 2px solid yellow;
 }
 
 .Phone{
-    border: 2px solid red;
+    border: 2px solid yellow;
 }
 
 .Textarea{
-    border: 2px solid red;
+    border: 2px solid yellow;
     width: 100%;
 }
 
+
+/*input fileinput*/
 .fileinput{
-    border: 2px solid red;
-    padding: 1em 0;
-}
-
-.Send{
-    border: 2px solid red;
-    float:right;
     padding-top:20px;
+  
+  }
+  input[type="file"]{
+      height:80px;
+     
+  }
+
+  input[type=file]::file-selector-button{
+      height:40px;
+      width: 100px;
+      background-color:#194866;
+      border:#194866;
+      color:#ffffff;
+      border-radius:12px;
+      transition: 1s;
+      cursor:pointer;
+  }
+  
+  input[type=file]::file-selector-button:hover{
+      background-color:#e7e7e7;
+      border: 1px solid #e7e7e7;
+      color:#000000;
+  }
+/* input fileinput end*/
+
+
+/* input submit*/
+.Send{
+    float:right;
 }
 
-input, textarea{
-    border-radius: 10px;
+input[value="Send"]{
+    font-size: 25px;
 }
+
+input[type="submit"]{
+    background-color: #194866;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width:120px;
+    height:60px;
+}
+
+input[type=submit]:hover {
+    background-color: #e7e7e7;
+    color:#000000;
+    transition: 1s;
+  }
+/* input submit end*/
+
+
 /*<main> End*/
 
 
 
 /*<footer Start*/
-.footer_email{
-    border: 2px solid white;
-    width: 25%;
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border:6px solid #EB5B25;
+    border-radius: 12px;
+    background-color: #EB5B25;
+    padding:5px;
+    width:100%;
 }
 
-.footer_phone{
+.footer_email, .footer_phone, .footer_location {
     border: 2px solid white;
-    width: 25%;
-   
+    width: 33%;
+    color:aliceblue;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+
 }
 
-.footer_location{
-    border: 2px solid white;
-    width: 25%;
+.footer_email img, .footer_phone img, .footer_location img{
+    width:25px;height:25px;
 }
 
-.footer_50{
-    border: 2px solid white;
-    width:25%;
+a:link, a:visited  {
+    text-decoration:none;
+    color:white;
 }
+
+.footer_email:after, .footer_phone:after, .footer_location:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #194866;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+
+
+.footer_email:hover:after, .footer_phone:hover:after, .footer_location:hover:after{
+    transform:scaleX(1);
+}
+
+.pad{
+    padding:20px;
+}
+
 /*<footer End>*/
