@@ -1,6 +1,10 @@
 *{
     box-sizing:border-box;
 }
+ 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 nav, main, footer{
     margin: 1em 0;
@@ -10,13 +14,11 @@ nav.navigation{
     display: flex;
     flex-direction: row;
     border: 4px solid rgb(110, 0, 0);
-    background-color:red;
 }
 
 main{
     display: flex;
     border: 4px solid rgb(180, 180, 0);
-    background-color:yellow;
     padding: 20px;
     
 }
@@ -34,7 +36,6 @@ footer{
 /*logo style Start*/
 .navigation_logo_top{
     border: 2px solid rgb(0, 0, 78);
-    background-color:blue;
     width:50%;
     padding-left:1em;
 }
@@ -49,7 +50,6 @@ footer{
     /*Contact us style Start*/
 .navigation_contact_us{
     border: 2px solid rgb(214, 2, 214);
-    background-color:purple;
     width: 50%; 
     padding-right:1em;
 }
@@ -69,6 +69,7 @@ footer{
 /* <main> Start*/
 .container{
     border:6px solid #EB5B25;
+    border-radius: 20px;
     background-color: #EB5B25;
     width:100%;
     padding:20px;
@@ -79,10 +80,17 @@ footer{
     flex-direction: column;
 }
 
+.form input, textarea{
+    outline:none;
+    border:none;
+    height:35px;
+    
+}
 
 label{
-    padding: 10px 0;
+    padding: 10px 0 0 0 ;
 }
+
 .fName{
     border: 2px solid red;
 }
@@ -105,11 +113,17 @@ label{
 
 .fileinput{
     border: 2px solid red;
+    padding: 1em 0;
 }
 
 .Send{
     border: 2px solid red;
     float:right;
+    padding-top:20px;
+}
+
+input, textarea{
+    border-radius: 10px;
 }
 /*<main> End*/
 
