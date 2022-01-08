@@ -5,5 +5,3 @@ To Do list:
 - BEM - struktura
 - přípojeni přes JS validace
 - přídat změnu jazyku z En do CZ
-
-
