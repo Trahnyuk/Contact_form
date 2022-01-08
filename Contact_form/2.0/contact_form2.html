@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16px">
+    
+    <title>Contact form 2</title>
+</head>
+<body>
+      <nav>
+          <div class="logo">
+              <a href="https://tipit.cz/" target="_black" > 
+              <img  src="tipit__logo.webp"></a>
+          </div>
+
+
+          <div class="contact_us">
+              <h1>Contact Us</h1>
+          </div>
+      </nav>
+
+      <div class="container">
+
+        <form action="#" class="form">
+             
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name" pattern="[a-z A-Z]*" required><span></span>
+              </div>
+              
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name" pattern="[a-z A-Z]*" required><span></span>
+              </div> 
+
+              <div>
+                <label for="phone">Phone number</label>
+                <input type="phone" id="phone" name="phone" placeholder="+420-XXX-XXX-XXX"  pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" required><span></span>
+              </div>
+
+              <div>
+                <label for="email">Your e-mail address</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required><span></span>
+              </div>
+
+              <div>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write massage" style="height:200px"></textarea>
+              </div>
+              
+              <div class="CV">
+                <input type="file" text="CV" name="CV" id="CV">
+              </div>
+
+              <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+
+              <div class="Send">
+                <input type="submit" value="Send">
+              </div>
+      </form>
+    </div>
+
+    <div class="pad"></div>
+
+    <footer>
+
+      <div class=footer_container>
+
+        <div class="footer_contact">
+
+          <div class="footer_email">
+             <img src="email-svgrepo-com.svg" style="width: 1.5em; height:1.5em"> 
+             <a alt="email_pic" href="mailto:tipit@tipit.cz">tipit@tipit.cz  </a>
+          </div>
+
+          <div class="footer_phone">
+              <img src="phone-svgrepo-com.svg" style="width: 1.5em; height:1.5em">  
+              <a href="tel:+420771110077">+420 771 110 077</a>
+          </div>
+
+          <div class="footer_location">
+              <img src="location-svgrepo-com.svg" style="width: 1.5em; height:1.5em">
+              <a  href="https://www.google.com/maps/place/TIP+IT+Solutions+s.r.o./@50.0504242,14.4339565,17z/data=!3m1!4b1!4m5!3m4!1s0x470b95925b02e4bb:0x94e8151a846c53f!8m2!3d50.0504208!4d14.4361452" target="_blank">Hvězdova 1716/2b, Praha 4 Nusle 140 00</a>
+          </div>
+
+          <div class="footer_socmedia"></div>
+        
+        </div>
+
+      </div>
+
+    </footer>
+
+          <div class="a50_logo">
+              <img src="https://tipit.cz/img/fallback/50_logo_white_transp@2x.png" alt="50_logo">
+          </div>
+
+    <div class="pad"></div>
+
+</body>
+</html>

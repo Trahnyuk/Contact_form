@@ -1,0 +1,139 @@
+*{
+    box-sizing:border-box;
+}
+
+nav, main, footer{
+    margin: 1em 0;
+}
+
+nav.navigation{
+    display: flex;
+    flex-direction: row;
+    border: 4px solid rgb(110, 0, 0);
+    background-color:red;
+}
+
+main{
+    display: flex;
+    border: 4px solid rgb(180, 180, 0);
+    background-color:yellow;
+    padding: 20px;
+    
+}
+
+
+footer{
+    display: flex;
+    border:4px solid rgb(2, 223, 2);
+    background-color:green;
+}
+
+
+/*<Nav> Star*/
+
+/*logo style Start*/
+.navigation_logo_top{
+    border: 2px solid rgb(0, 0, 78);
+    background-color:blue;
+    width:50%;
+    padding-left:1em;
+}
+
+.navigation_logo_top img{
+    width:7em;
+    height:4em;
+}
+/*Logot style End*/
+
+
+    /*Contact us style Start*/
+.navigation_contact_us{
+    border: 2px solid rgb(214, 2, 214);
+    background-color:purple;
+    width: 50%; 
+    padding-right:1em;
+}
+
+.navigation_contact_us h1{
+    float: right;
+    border-bottom: 4px solid #EB5B25;
+}
+    /*Contact us style End*/
+
+/* <Nav> End */
+
+
+
+
+
+/* <main> Start*/
+.container{
+    border:6px solid #EB5B25;
+    background-color: #EB5B25;
+    width:100%;
+    padding:20px;
+}
+
+.fName, .lName, .Email, .Phone, .Textarea, .Fileinput label{
+    display: flex;
+    flex-direction: column;
+}
+
+
+label{
+    padding: 10px 0;
+}
+.fName{
+    border: 2px solid red;
+}
+.lName{
+    border: 2px solid red;
+}
+
+.Email{
+    border: 2px solid red;
+}
+
+.Phone{
+    border: 2px solid red;
+}
+
+.Textarea{
+    border: 2px solid red;
+    width: 100%;
+}
+
+.fileinput{
+    border: 2px solid red;
+}
+
+.Send{
+    border: 2px solid red;
+    float:right;
+}
+/*<main> End*/
+
+
+
+/*<footer Start*/
+.footer_email{
+    border: 2px solid white;
+    width: 25%;
+}
+
+.footer_phone{
+    border: 2px solid white;
+    width: 25%;
+   
+}
+
+.footer_location{
+    border: 2px solid white;
+    width: 25%;
+}
+
+.footer_50{
+    border: 2px solid white;
+    width:25%;
+}
+/*<footer End>*/
