@@ -5,4 +5,4 @@ To Do list:
 - BEM - struktura
 - přípojeni přes JS validace
 
-- control of git
+- control of git I did it!
