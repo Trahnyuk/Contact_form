@@ -1,12 +1,10 @@
 *{
     box-sizing:border-box;
 }
-
  
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 nav, main, footer{
     margin: 1em 0;
@@ -22,12 +20,7 @@ nav.navigation{
 
 main{
     display: flex;
-<<<<<<< HEAD
     padding:4px;
-=======
-    border: 4px solid rgb(180, 180, 0);
-    padding: 20px;   
->>>>>>> 9c7d649dad7b7a6500b63e8a4808434e4674ef12
 }
 
 
@@ -82,39 +75,31 @@ footer{
     flex-direction: column;
 }
 
-<<<<<<< HEAD
 .form input{
     outline:none;
     border:none;
     height:35px;   
+    padding-left:10px;
 }
 
 textarea{
     height:100px;
+    padding-top:10px;
+    padding-left:10px;
+
 }
 
 input[type="text"], input[type="email"], input[type="phone"], textarea{
     border-radius: 12px;
-=======
-
-.form input, textarea{
-    outline:none;
-    border:none;
-    height:35px;
->>>>>>> 9c7d649dad7b7a6500b63e8a4808434e4674ef12
 }
 
 label{
     padding: 15px 0px 5px 0 ;
 }
 
-
-label{
-    padding: 10px 0;
-}
-
 .fName{
     border: 2px solid yellow;
+    padding:40px;
 }
 .lName{
     border: 2px solid yellow;
@@ -188,8 +173,6 @@ input[type=submit]:hover {
     transition: 1s;
   }
 /* input submit end*/
-
-
 /*<main> End*/
 
 
@@ -212,7 +195,7 @@ input[type=submit]:hover {
     color:aliceblue;
     text-align: center;
     font-size: 16px;
-    padding: 20px;
+    padding: 20px;  
 
 }
 
@@ -243,3 +226,90 @@ a:link, a:visited  {
 }
 
 /*<footer End>*/
+
+
+
+/*validation start*/
+
+/*
+input+span{
+    position:relative;
+}
+  
+  input+span:before{ 
+    position:absolute;
+    left:-30px;
+    top: -6px;
+}
+  
+  input:valid + span::before{
+    content: '✓';
+    color:green;
+    font-size: 24px;
+}
+  
+  /* how to hide?*/
+  /*
+  input:invalid:not(span-shown) + span::before {
+    content: '✖' ;
+    color:red;
+    font-size: 24px;
+  }*/
+
+
+  .text_error, .Email_error, .Phone_error{
+    color: yellow;
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+    margin-left: 10px;
+	display: noe;
+}
+
+
+/* valid
+.fName input:valid:not(:placeholder-shown) {
+	border-color: green;
+	background-color:green;
+}
+
+.lName input:valid:not(:placeholder-shown) {
+	border-color: green;
+	background-color:green;
+}
+
+.Phone input:valid:not(:placeholder-shown) {
+	border-color: green;
+	background-color:green;
+}
+
+.Email input:valid:not(:placeholder-shown) {
+	border-color: green;
+	background-color:green;
+}
+
+valid end*/
+
+
+
+/*invalid
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+	border-color: red;
+    background-color: red;
+}
+input[type="email"]:invalid:not(:placeholder-shown) + .Email_error {
+	display: block;
+}
+
+input[type="phone"]:invalid:not(:placeholder-shown) + .Phone_error {
+    display: block;
+}
+
+.lName input[type="text"]:invalid:not(:placeholder-show) + .text_error{
+    display: block;
+}
+invalid end*/
+
+

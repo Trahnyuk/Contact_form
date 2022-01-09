@@ -26,37 +26,40 @@
 
 
     <main>
-<<<<<<< HEAD
 
         <div class="container_main">
 
             <form class="form" action="/action_page.html" target="_blank" method="post" autocomplete="off">
 
-=======
-        <div class="container">
-
-            <form class="form" action="/action_page.html" target="_blank" method="post" autocomplete="off">
-
-
->>>>>>> 9c7d649dad7b7a6500b63e8a4808434e4674ef12
                 <div class="fName">
                     <label>First Name</label>
-                    <input type="text" placeholder="Enter your name" name="firstName" id="firstName">
+                    <input type="text" placeholder="Enter your name" name="firstName" id="firstName" 
+                    pattern="[a-z A-Z]*"
+                    required>
+                    <span class="text_error">Enter only leters</span>
                 </div>
 
                 <div class="lName">
                     <label>Last Name</label>
-                    <input type="text" placeholder="Enter your last name" name="lastName" id="lastName">
+                    <input type="text" placeholder="Enter your last name" name="lastName" id="lastName"
+                    pattern="[a-z A-Z]*"
+                    required>
+                    <span class="text_error">Enter only lerers</span>
                 </div>
 
                 <div class="Email">
                     <label>Your e-mail</label>
-                    <input type="email" placeholder="Enter your email address" name="email" id="email">
+                    <input type="email" placeholder="Enter your email address" name="email" id="email"
+                    required>
+                    <span class="Email_error">should content E-mail address for example: example@site.com</span>
                 </div>
 
                 <div class="Phone">
                     <label>Your phone number</label>
-                    <input type="phone" placeholder="Enter your phone number" name="phoneNumber" id="phoneNumber">
+                    <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phoneNumber" id="phoneNumber"
+                    pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16"
+                    required>
+                    <span class="Phone_error">enter Phone Number in this form: +420-XXX-XXX-XXX</span>
                 </div>
 
                 <div class="Textarea">
@@ -71,7 +74,6 @@
 
                 <div class="Send">
                     <label class="Send_buttom"></label>
-
                     <input type="submit" value="Send">
                 </div>
 
