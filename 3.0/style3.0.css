@@ -82,10 +82,17 @@ footer{
     padding-left:10px;
 }
 
+.reset{
+    display: flex;
+    flex-direction: row;
+    border:2px solid yellow;
+}
+
 textarea{
     height:100px;
     padding-top:10px;
     padding-left:10px;
+    outline:none;
 
 }
 
@@ -99,7 +106,6 @@ label{
 
 .fName{
     border: 2px solid yellow;
-    padding:40px;
 }
 .lName{
     border: 2px solid yellow;
@@ -119,6 +125,35 @@ label{
 }
 
 
+/* input reset*/
+
+input[type="reset"]{
+    background-color:#194866;
+    border:#194866;
+    color:#ffffff;
+    border-radius:12px;
+    padding:10px 20px;
+    cursor:pointer;
+
+}
+
+input[type="reset"]:hover{
+    background-color:#e7e7e7;
+    border: 1px solid #e7e7e7;
+    color:#000000;
+    transition: 1s;
+
+}
+
+span.reset_border{
+    display: inline-block;
+    margin-top:8px;
+    margin-right:20px;
+}
+
+/* input reset End*/
+
+
 /*input fileinput*/
 .fileinput{
     padding-top:20px;
@@ -136,7 +171,6 @@ label{
       border:#194866;
       color:#ffffff;
       border-radius:12px;
-      transition: 1s;
       cursor:pointer;
   }
   
@@ -144,6 +178,7 @@ label{
       background-color:#e7e7e7;
       border: 1px solid #e7e7e7;
       color:#000000;
+      transition: 1s;
   }
 /* input fileinput end*/
 
@@ -151,10 +186,6 @@ label{
 /* input submit*/
 .Send{
     float:right;
-}
-
-input[value="Send"]{
-    font-size: 25px;
 }
 
 input[type="submit"]{
@@ -171,7 +202,11 @@ input[type=submit]:hover {
     background-color: #e7e7e7;
     color:#000000;
     transition: 1s;
-  }
+}
+
+  input[value="Send"]{
+    font-size: 25px;
+}
 /* input submit end*/
 /*<main> End*/
 
@@ -190,7 +225,6 @@ input[type=submit]:hover {
 }
 
 .footer_email, .footer_phone, .footer_location {
-    border: 2px solid white;
     width: 33%;
     color:aliceblue;
     text-align: center;

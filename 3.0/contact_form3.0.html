@@ -33,7 +33,7 @@
 
                 <div class="fName">
                     <label>First Name</label>
-                    <input type="text" placeholder="Enter your name" name="firstName" id="firstName" 
+                    <input type="text" placeholder="Enter your name" name="firstName" id="firstName" title=" First name only" 
                     pattern="[a-z A-Z]*"
                     required>
                     <span class="text_error">Enter only leters</span>
@@ -41,7 +41,7 @@
 
                 <div class="lName">
                     <label>Last Name</label>
-                    <input type="text" placeholder="Enter your last name" name="lastName" id="lastName"
+                    <input type="text" placeholder="Enter your last name" name="lastName" id="lastName" title="Last name only"
                     pattern="[a-z A-Z]*"
                     required>
                     <span class="text_error">Enter only lerers</span>
@@ -49,14 +49,14 @@
 
                 <div class="Email">
                     <label>Your e-mail</label>
-                    <input type="email" placeholder="Enter your email address" name="email" id="email"
+                    <input type="email" placeholder="Enter your email address" name="email" id="email" title="Enter your email address: example@site.com"
                     required>
                     <span class="Email_error">should content E-mail address for example: example@site.com</span>
                 </div>
 
                 <div class="Phone">
                     <label>Your phone number</label>
-                    <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phoneNumber" id="phoneNumber"
+                    <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phoneNumber" title=" Enter phone number in this form: +420-XXX-XXX-XXX" id="phoneNumber"
                     pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16"
                     required>
                     <span class="Phone_error">enter Phone Number in this form: +420-XXX-XXX-XXX</span>
@@ -67,9 +67,14 @@
                     <textarea placeholder="Leave your message" name="textarea" id="textarea"></textarea>
                 </div>
 
+                <div class="reset">
+                    <lable class="resert"> <span class="reset_border">If you did some mistake:</span></lable>
+                    <input type="reset">
+                </div>
+
                 <div class="fileinput">
-                    <label class="fileinput_CV">CV</label>
-                    <input type="file" >
+                    <label class="fileinput_CV"> Send your CV:</label>
+                    <input type="file" value="reset">
                 </div>
 
                 <div class="Send">
