@@ -29,38 +29,48 @@
 
         <div class="container_main">
 
-            <form class="form" action="/action_page.html" target="_blank" method="post" autocomplete="off">
+            <form class="form" action="/action_page.html" target="_blank" method="post" autocomplete="off" name="myForm" onsubmit="return regForm">
 
                 <div class="fName">
                     <label>First Name</label>
-                    <input type="text" placeholder="Enter your name" name="firstName" id="firstName" title=" First name only" 
-                    pattern="[a-z A-Z]*"
-                    required>
-                    <span class="text_error">Enter only leters</span>
+                    <input type="text" placeholder="Enter your name" name="firstName" title=" First name only">
+                    
+                    <!--pattern="[a-z A-Z]*"
+
+                    required-->
+
+                    <span class="contactForm_explanation">*Write your first name</span>
                 </div>
+
 
                 <div class="lName">
                     <label>Last Name</label>
-                    <input type="text" placeholder="Enter your last name" name="lastName" id="lastName" title="Last name only"
-                    pattern="[a-z A-Z]*"
-                    required>
-                    <span class="text_error">Enter only lerers</span>
+                    <input type="text" placeholder="Enter your last name" name="lastName" title="Last name only">
+                    <!--pattern="[a-z A-Z]*"
+                    required-->
+
+                    <span class="contactForm_explanation">*Write your last name</span>
                 </div>
+
+               
 
                 <div class="Email">
                     <label>Your e-mail</label>
-                    <input type="email" placeholder="Enter your email address" name="email" id="email" title="Enter your email address: example@site.com"
-                    required>
-                    <span class="Email_error">should content E-mail address for example: example@site.com</span>
+                    <input type="email" placeholder="Enter your email address" name="email" title="Enter your email address: example@site.com">
+                    <!--required-->
+                    <span class="contactForm_explanation">*Enter your email addres, for example: example@site.com</span>
                 </div>
+
 
                 <div class="Phone">
                     <label>Your phone number</label>
-                    <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phoneNumber" title=" Enter phone number in this form: +420-XXX-XXX-XXX" id="phoneNumber"
-                    pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16"
-                    required>
-                    <span class="Phone_error">enter Phone Number in this form: +420-XXX-XXX-XXX</span>
+                    <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phone" title=" Enter phone number in this form: +420-XXX-XXX-XXX">
+                    <!--pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16"
+                    required-->
+                  
+                    <span class="contactForm_explanation">*Write your phone number in this form:+420-xxx-xxx-xxx</span>
                 </div>
+
 
                 <div class="Textarea">
                     <label>Leave your message</label>
