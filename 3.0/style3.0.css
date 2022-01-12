@@ -62,7 +62,7 @@ footer{
 
 
 /* <main> Start*/
-.container_main{
+.containerMain{
     border:6px solid #EB5B25;
     border-radius: 20px;
     background-color: #EB5B25;
@@ -70,12 +70,12 @@ footer{
     padding:5px;
 }
 
-.fName, .lName, .Email, .Phone, .Textarea, .Fileinput label{
+.contactForm__firstName, .contactForm__lastName, .contactForm__email, .contactForm__phone, .contactForm__textarea, .Fileinput label{
     display: flex;
     flex-direction: column;
 }
 
-.form input{
+.contactForm input{
     outline:none;
     border:none;
     height:35px;   
@@ -104,22 +104,22 @@ label{
     padding: 15px 0px 5px 0 ;
 }
 
-.fName{
+.contactForm__firstName{
     border: 2px solid yellow;
 }
-.lName{
-    border: 2px solid yellow;
-}
-
-.Email{
+.contactForm__lastName{
     border: 2px solid yellow;
 }
 
-.Phone{
+.contactForm__email{
     border: 2px solid yellow;
 }
 
-.Textarea{
+.contactForm__phone{
+    border: 2px solid yellow;
+}
+
+.contactForm__textarea{
     border: 2px solid yellow;
     width: 100%;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style3.0.css">
+    <script type="text/javascript" src="validation.js"> </script>
     <title>Contact_form3.0</title>
 </head>
 
@@ -27,13 +28,13 @@
 
     <main>
 
-        <div class="container_main">
+        <div class="containerMain">
 
-            <form class="form" action="/action_page.html" target="_blank" method="post" autocomplete="off" name="myForm" onsubmit="return regForm">
+            <form class="contactForm" action="/action_page.html" target="_blank" method="post" name="myForm" onsubmit="return regForm()">
 
-                <div class="fName">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Enter your name" name="firstName" title=" First name only">
+                <div class="contactForm__firstName">
+                    <label>Firs tName</label>
+                    <input type="text" placeholder="Enter your name" name="firstName" title="First name only">
                     
                     <!--pattern="[a-z A-Z]*"
 
@@ -43,7 +44,7 @@
                 </div>
 
 
-                <div class="lName">
+                <div class="contactForm__lastName">
                     <label>Last Name</label>
                     <input type="text" placeholder="Enter your last name" name="lastName" title="Last name only">
                     <!--pattern="[a-z A-Z]*"
@@ -54,7 +55,7 @@
 
                
 
-                <div class="Email">
+                <div class="contactForm__email">
                     <label>Your e-mail</label>
                     <input type="email" placeholder="Enter your email address" name="email" title="Enter your email address: example@site.com">
                     <!--required-->
@@ -62,7 +63,7 @@
                 </div>
 
 
-                <div class="Phone">
+                <div class="contactForm__phone">
                     <label>Your phone number</label>
                     <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phone" title=" Enter phone number in this form: +420-XXX-XXX-XXX">
                     <!--pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16"
@@ -72,9 +73,9 @@
                 </div>
 
 
-                <div class="Textarea">
+                <div class="contactForm__textarea">
                     <label>Leave your message</label>
-                    <textarea placeholder="Leave your message" name="textarea" id="textarea"></textarea>
+                    <textarea placeholder="Leave your message" name="textarea"></textarea>
                 </div>
 
                 <div class="reset">
@@ -128,8 +129,6 @@
     <div class="pad"></div>
 
     
-    <script>
-
-    </script>
+    
 </body>
 </html>

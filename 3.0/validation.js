@@ -2,20 +2,21 @@
         function regForm() {
 
             const firstName =
-                document.getElementsByClassName["form"]["firstName"];
+                document.forms["myForm"]["firstName"];
 
             const lastName =
-                document.getElementsByClassName["form"]["lastName"];
+                document.forms["myForm"]["lastName"];
 
             const email =
-                document.getElementsByClassName["form"]["email"];
+                document.forms["myForm"]["email"];
 
             const phone =
-                document.getElementsByClassName["form"]["phone"];
+                document.forms["myForm"]["phone"];
 
            
 
             if (firstName.value == "") {
+
                 window.alert("Please enter your First name.");
                 firstName.focus();
                 return false;
