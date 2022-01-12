@@ -18,6 +18,7 @@
             if (firstName.value == "") {
 
                 window.alert("Please enter your First name.");
+                
                 firstName.focus();
                 return false;
             }

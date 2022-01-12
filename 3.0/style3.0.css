@@ -85,7 +85,6 @@ footer{
 .reset{
     display: flex;
     flex-direction: row;
-    border:2px solid yellow;
 }
 
 textarea{
@@ -104,6 +103,7 @@ label{
     padding: 15px 0px 5px 0 ;
 }
 
+/*
 .contactForm__firstName{
     border: 2px solid yellow;
 }
@@ -123,6 +123,13 @@ label{
     border: 2px solid yellow;
     width: 100%;
 }
+
+.reset{
+    border:2px solid yellow;
+}
+
+
+*/
 
 
 /* input reset*/
@@ -263,93 +270,98 @@ a:link, a:visited  {
 
 
 
+
+
 /*validation start*/
 
-/*
-input+span{
-    position:relative;
-}
-  
-  input+span:before{ 
-    position:absolute;
-    left:-30px;
-    top: -6px;
-}
-  
-  input:valid + span::before{
-    content: '✓';
-    color:green;
-    font-size: 24px;
-}
-  
-  /* how to hide?*/
-  /*
-  input:invalid:not(span-shown) + span::before {
-    content: '✖' ;
-    color:red;
-    font-size: 24px;
-  }*/
-
-
-  .text_error, .Email_error, .Phone_error{
+  .contactForm_explanation{
     color: yellow;
 	text-align: left;
 	font-size: 12px;
 	display: block;
 	margin-top: 3px;
     margin-left: 10px;
-	display: noe;
+
 }
 
 
-/* valid
-.fName input:valid:not(:placeholder-shown) {
+/*valid background
+
+.contactForm__firstName input:valid:not(:placeholder-shown) {
 	border-color: green;
+    background-color: greenyellow;
+	
+}
+
+.contactForm__lastName input:valid:not(:placeholder-shown) {
+	border-color: green;
+    background-color: greenyellow;
+	
+}
+
+.contactForm__email input:valid:not(:placeholder-shown) {
+	border-color: green;
+    border: 2px solid;
 	background-color:green;
 }
 
-.lName input:valid:not(:placeholder-shown) {
+.contactForm__phone input:valid:not(:placeholder-shown) {
 	border-color: green;
 	background-color:green;
 }
+*/
 
-.Phone input:valid:not(:placeholder-shown) {
-	border-color: green;
+/*
+input:valid:not(placeholder-shown){
+    border-color: green;
+	background-color:green;
+}*/
+
+input[type="text"]:valid:not(:placeholder-shown){
+    border-color: green;
 	background-color:green;
 }
 
-.Email input:valid:not(:placeholder-shown) {
-	border-color: green;
+input[type="email"]:valid:not(:placeholder-shown){
+    border-color: green;
 	background-color:green;
 }
 
-valid end*/
+input[type="phone"]:validation:not(:placeholder-shown){
+    border-color: green;
+	background-color:green;
+}
 
 
 
-/*invalid
 
-input:invalid:not(:placeholder-shown):not(:focus) {
+
+
+
+/*valid background end*/
+
+
+
+/*invalid*/
+
+input:invalid:not(:placeholder-shown){
 	border-color: red;
     background-color: red;
 }
-input[type="email"]:invalid:not(:placeholder-shown) + .Email_error {
+input[type="email"]:invalid:not(:placeholder-shown) + span.contactForm_explanation{
 	display: block;
+    visibility: visible;
 }
 
-input[type="phone"]:invalid:not(:placeholder-shown) + .Phone_error {
+input[type="phone"]:invalid:not(:placeholder-shown) + span.Phone_error {
     display: block;
 }
 
-.lName input[type="text"]:invalid:not(:placeholder-show) + .text_error{
+.lName input[type="text"]:invalid:not(:placeholder-show) +  {
     display: block;
 }
-invalid end*/
+
+/*invalid end*/
 
 
-span.contactForm_explanation{
-    font-size:12px;
-    color: rgb(0, 0, 0);
-    margin-top:8px;
-    padding-left:10px;
-}
+
