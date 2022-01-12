@@ -205,6 +205,11 @@ input[type="reset"]:hover{
   }
 /* input fileinput end*/
 
+.g-recaptcha{
+    display:flex;
+    padding:1em 0 1em 0;
+}
+
 
 /* input submit*/
 .contactForm__send{
