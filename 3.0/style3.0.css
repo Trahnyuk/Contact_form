@@ -3,8 +3,12 @@
 }
  
 body{
+    background-image: url(https://tipit.cz/img/pankrac.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
 nav, main, footer{
     margin: 1em 0;
@@ -14,19 +18,19 @@ nav, main, footer{
 nav.navigation{
     display:flex;
     flex-direction: row;
-    padding:4px;
+    padding:10px;
 }
 
 
 main{
     display: flex;
-    padding:4px;
+    padding:10px;
 }
 
 
 footer{
-    display: flex;
-    padding:4px;
+    display:flex;
+    padding:10px;
 }
 
 
@@ -67,10 +71,10 @@ footer{
     border-radius: 20px;
     background-color: #EB5B25;
     width:100%;
-    padding:5px;
+    padding:5px 15px 10px 15px;
 }
 
-.contactForm__firstName, .contactForm__lastName, .contactForm__email, .contactForm__phone, .contactForm__textarea, .Fileinput label{
+.contactForm__firstName, .contactForm__lastName, .contactForm__email, .contactForm__phone, .contactForm__textarea, .contactForm__send, label{
     display: flex;
     flex-direction: column;
 }
@@ -82,28 +86,26 @@ footer{
     padding-left:10px;
 }
 
-.reset{
-    display: flex;
-    flex-direction: row;
-    border:2px solid yellow;
-}
 
 textarea{
     height:100px;
     padding-top:10px;
     padding-left:10px;
     outline:none;
-
 }
+
 
 input[type="text"], input[type="email"], input[type="phone"], textarea{
     border-radius: 12px;
 }
 
 label{
-    padding: 15px 0px 5px 0 ;
+    padding: 25px 0px 5px 0 ;
 }
 
+
+/* border*/
+/*
 .contactForm__firstName{
     border: 2px solid yellow;
 }
@@ -124,8 +126,31 @@ label{
     width: 100%;
 }
 
+.contactForm__reset{
+    border:2px solid yellow;
+}
+
+.contactForm__file{
+    border:2px solid yellow;
+}
+
+.contactForm__horizonatl{
+    border:2px solid yellow;
+
+*/
+/* border end*/
+
+
+.contactForm__horizonatl{
+  
+    border-bottom: 6px solid #194866;
+    padding: 1.5em 4em 0em 4em;
+}
 
 /* input reset*/
+.contactForm__reset{
+    padding-top: 20px;
+}
 
 input[type="reset"]{
     background-color:#194866;
@@ -134,7 +159,7 @@ input[type="reset"]{
     border-radius:12px;
     padding:10px 20px;
     cursor:pointer;
-
+    display:block;
 }
 
 input[type="reset"]:hover{
@@ -142,25 +167,23 @@ input[type="reset"]:hover{
     border: 1px solid #e7e7e7;
     color:#000000;
     transition: 1s;
-
 }
-
-span.reset_border{
-    display: inline-block;
-    margin-top:8px;
-    margin-right:20px;
-}
-
 /* input reset End*/
 
 
-/*input fileinput*/
-.fileinput{
-    padding-top:20px;
-  
+
+/*input file*/
+.contactForm__file{
+    display: flex;
+    padding-top:10px;
   }
+
+.contactForm__file_fileinput_CV{
+    padding-top:0.6em;
+}
+
   input[type="file"]{
-      height:80px;
+      height:3em;
      
   }
 
@@ -184,8 +207,9 @@ span.reset_border{
 
 
 /* input submit*/
-.Send{
-    float:right;
+.contactForm__send{
+    display: flex;
+    float: right;
 }
 
 input[type="submit"]{
@@ -196,6 +220,7 @@ input[type="submit"]{
     cursor: pointer;
     width:120px;
     height:60px;
+    
 }
 
 input[type=submit]:hover {
@@ -208,6 +233,7 @@ input[type=submit]:hover {
     font-size: 25px;
 }
 /* input submit end*/
+
 /*<main> End*/
 
 
@@ -263,93 +289,60 @@ a:link, a:visited  {
 
 
 
+
+
 /*validation start*/
 
-/*
-input+span{
-    position:relative;
-}
-  
-  input+span:before{ 
-    position:absolute;
-    left:-30px;
-    top: -6px;
-}
-  
-  input:valid + span::before{
-    content: '✓';
-    color:green;
-    font-size: 24px;
-}
-  
-  /* how to hide?*/
-  /*
-  input:invalid:not(span-shown) + span::before {
-    content: '✖' ;
-    color:red;
-    font-size: 24px;
-  }*/
-
-
-  .text_error, .Email_error, .Phone_error{
+  .contactForm_explanation{
     color: yellow;
 	text-align: left;
 	font-size: 12px;
 	display: block;
 	margin-top: 3px;
     margin-left: 10px;
-	display: noe;
+
 }
 
+/*valid background*/
 
-/* valid
-.fName input:valid:not(:placeholder-shown) {
-	border-color: green;
+input[type="text"]:valid:not(:placeholder-shown){
+    border-color: rgb(128, 194, 128);
+	background-color:rgb(128, 194, 128);
+}
+
+input[type="email"]:valid:not(:placeholder-shown){
+    border-color: green;
 	background-color:green;
 }
 
-.lName input:valid:not(:placeholder-shown) {
-	border-color: green;
+input[type="phone"]:valid:not(:placeholder-shown){
+    border-color: green;
 	background-color:green;
 }
-
-.Phone input:valid:not(:placeholder-shown) {
-	border-color: green;
-	background-color:green;
-}
-
-.Email input:valid:not(:placeholder-shown) {
-	border-color: green;
-	background-color:green;
-}
-
-valid end*/
+/*valid background end*/
 
 
 
-/*invalid
+/*invalid background*/
 
-input:invalid:not(:placeholder-shown):not(:focus) {
+input:invalid:not(:placeholder-shown){
 	border-color: red;
     background-color: red;
 }
-input[type="email"]:invalid:not(:placeholder-shown) + .Email_error {
+input[type="email"]:invalid:not(:placeholder-shown) + span.contactForm_explanation{
 	display: block;
+    visibility: visible;
 }
 
-input[type="phone"]:invalid:not(:placeholder-shown) + .Phone_error {
+input[type="phone"]:invalid:not(:placeholder-shown) + span.Phone_error {
     display: block;
 }
 
-.lName input[type="text"]:invalid:not(:placeholder-show) + .text_error{
+.lName input[type="text"]:invalid:not(:placeholder-show) +  {
     display: block;
 }
-invalid end*/
+
+/*invalid background end*/
 
 
-span.contactForm_explanation{
-    font-size:12px;
-    color: rgb(0, 0, 0);
-    margin-top:8px;
-    padding-left:10px;
-}
+
