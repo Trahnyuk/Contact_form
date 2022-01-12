@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style3.0.css">
     <script type="text/javascript" src="validation.js"> </script>
+
     <title>Contact_form3.0</title>
 </head>
 
@@ -15,7 +16,7 @@
 
         <div class="navigation_logo_top">
             <a href="https://tipit.cz/" target="_blank">
-            <img src="../3.0/source item/tipit__logo.webp" alt="logo tip it">
+            <img src="../3.0/source item/tipit__logo.webp" alt="logo tip it" title="tipit.cz">
             </a>
         </div>
 
@@ -33,7 +34,7 @@
             <form class="contactForm" action="/action_page.html" target="_blank" method="post" name="myForm" onsubmit="return regForm()">
 
                 <div class="contactForm__firstName">
-                    <label>Firs tName</label>
+                    <label>First Name</label>
                     <input type="text" placeholder="Enter your name" name="firstName" title="First name only"
                     pattern="[a-z A-Z]*"> 
 
@@ -64,7 +65,7 @@
                     <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phone" title=" Enter phone number in this form: +420-XXX-XXX-XXX"
                     pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16">
                     
-                    <span class="contactForm_explanation">*Write your phone number in this form:+420-xxx-xxx-xxx</span>
+                    <span class="contactForm_explanation">*Write your phone number in this form:+420-XXX-XXX-XXX</span>
                 </div>
 
 
@@ -73,18 +74,22 @@
                     <textarea placeholder="Leave your message" name="textarea"></textarea>
                 </div>
 
-                <div class="reset">
-                    <lable class="resert"> <span class="reset_border">If you did some mistake:</span></lable>
+                <div class="contactForm__horizonatl"></div>
+
+                <div class="contactForm__reset">
+                    <lable>If you did some mistake:</lable>
                     <input type="reset">
                 </div>
 
-                <div class="fileinput">
-                    <label class="fileinput_CV"> Send your CV:</label>
+                <div class="contactForm__file">
+                    <label class="contactForm__file_fileinput_CV"> Send your CV:</label>
                     <input type="file" value="reset">
                 </div>
 
-                <div class="Send">
-                    <label class="Send_buttom"></label>
+                <div class="contactForm__captcha" 
+                data-sitekey="YOUR SITE KEY"></div>
+
+                <div class="contactForm__send">
                     <input type="submit" value="Send">
                 </div>
 
@@ -93,6 +98,7 @@
         </div>
 
     </main>
+
 
 
     <footer>
@@ -123,7 +129,5 @@
 
     <div class="pad"></div>
 
-    
-    
 </body>
 </html>
