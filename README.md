@@ -3,7 +3,7 @@ To Do list:
 
 - teorije []:
     - bit map [];
-    - name spacecing [];
+    - namespacing [];
     - spravni princip komentovani[];
     - ivent propagation in JS[];
     - coje AJAX Introduction: https://www.w3schools.com/js/js_ajax_intro.asp[];
