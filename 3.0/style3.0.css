@@ -299,7 +299,7 @@ a:link, a:visited  {
 
 /*validation start*/
 
-  .contactForm_explanation{
+  .contactForm__explanation{
     color: yellow;
 	text-align: left;
 	font-size: 12px;
