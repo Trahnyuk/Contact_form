@@ -25,8 +25,8 @@ To Do list:
 
 
 - <input> uprava funkcionalu[+/-]:
-    - uprava <type="phone"> (zmenit format tel. cisla na XxxXxxXxx), zamezit zadavani pismena - jenom cisla [];
-    - uprava <type='email'> (upravit validaci, ev. zadat pattern="" ) 
+    - uprava <type="phone"> (zmenit format tel. cisla na XxxXxxXxx), zamezit zadavani pismena - jenom cisla;[]
+    - uprava <type='email'> (upravit validaci, ev. zadat pattern="" );[]
     
     
 - BEM metodologie  nadale zdokonalovat; [+/-]
@@ -34,16 +34,16 @@ To Do list:
 
 - <script> [+/-]:
     - pripojit pres JS validaci, místo <.alert>  jina funkce validace;[]
-    - podivat se na true a false ve function (aby mohlo ukazovat validaci pro vsechny radky)[]
+    - podivat se na true a false ve function (aby mohlo ukazovat validaci pro vsechny radky);[]
 
-- pokusit se vytvorit request ze stranky pres Consol s pomoci https://jsonplaceholder.typicode.com/  [-]
+- pokusit se vytvorit request ze stranky pres Consol s pomoci https://jsonplaceholder.typicode.com/;[-]
 
 - obrazky []:
-    - seznamitse .webp[]
-    - svg [+]
+    - seznamitse .webp;[]
+    - svg; [+]
     
 - UI/UX[]
-    user friendly markup
+    user friendly markup; []
     
     
  
