@@ -42,5 +42,8 @@ To Do list:
     - seznamitse .webp[]
     - svg [+]
     
+- UI/UX[]
+    user friendly markup
+    
     
  
