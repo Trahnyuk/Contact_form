@@ -26,7 +26,7 @@ To Do list:
 
 - <input> uprava funkcionalu[+/-]:
     - uprava <type="phone"> (zmenit format tel. cisla na XxxXxxXxx), zamezit zadavani pismena - jenom cisla;[]
-    - uprava <type='email'> (upravit validaci, ev. zadat pattern="" );[]
+    - uprava <type='email'> (upravit validaci, ev. zadat pattern="" );[in progres...]
     
     
 - BEM metodologie  nadale zdokonalovat; [+/-]

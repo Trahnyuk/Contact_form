@@ -51,14 +51,29 @@
                     <span class="contactForm__explanation">*Write your last name</span>
                 </div>
 
-               
+        
 
                 <div class="contactForm__email">
-                    <label>Your e-mail</label>
-                    <input type="email" placeholder="Enter your email address" name="email" title="Enter your email address: example@site.com">
-        
+                    <label><span>Your e-mail <sup>*for example: example@site.com</sup></span></label>
+                    <input onkeyup="check()" 
+                    id="email" 
+                    type="email" 
+                    placeholder="Enter Email Address" required>
+    
+                    <div class="contactForm__explanation_icons">
+                        <span class="icon1 fas fa-exclamation "></span>
+                        <span class="icon2 fas fa-check "></span>
+                    </div>
+    
                     <span class="contactForm__explanation">*Enter your email addres, for example: example@site.com</span>
+    
                 </div>
+    
+                <div class="contactForm__error-text">
+                    *Enter your email addres, for example: example@site.com
+                </div>
+
+
 
 
                 <div class="contactForm__phone">
@@ -68,6 +83,7 @@
                     
                     <span class="contactForm__explanation">*Write your phone number in this form:+420-XXX-XXX-XXX</span>
                 </div>
+
 
 
                 <div class="contactForm__textarea">
@@ -89,9 +105,12 @@
 
                 <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
 
+
+
                 <div class="contactForm__send">
-                    <input type="submit" value="Send">
+                    <button class="contactForm__send_button">Send</button>
                 </div>
+
 
             </form>
 
