@@ -365,8 +365,8 @@ form .contactForm__email input{
 
   form .contactForm__email .contactForm__explanation_icons{
     position: absolute;
-    right: 100px;
-    top: 25.3em;
+    right: 3em;
+    top: 25.1em;
   }
 
   .contactForm__email .contactForm__explanation_icons span{
@@ -381,12 +381,13 @@ form .contactForm__email input{
   .contactForm__email .contactForm__explanation_icons span.icon1{
     color: #e74c3c;
     border-color: #e74c3c;
+    text-align: center;
   }
 
   .contactForm__email .contactForm__explanation_icons span.icon2{
     color: #27ae60;
     border-color: #27ae60;
-    background-color: #219150;
+    text-align: center;
   }
 
 
@@ -397,7 +398,7 @@ form .contactForm__email input{
     background: #f77f00;
     color: #000000;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 12px;
     user-select: none;
     display: nne;
   }
