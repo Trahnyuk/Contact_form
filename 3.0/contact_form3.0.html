@@ -34,13 +34,33 @@
 
             <form class="contactForm" action="/action_page.html" target="_blank" method="post" name="myForm" onsubmit="return regForm()">
 
+                
                 <div class="contactForm__firstName">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Enter your name" name="firstName" title="First name only"
-                    pattern="[a-z A-Z]*" autofocus="autofocus"> 
+                    <label>First Name<span><sup>*write your first name</sup></span></label>
+                    <input onkeyup="checkFirstName()" 
+                    id="firstName"
+                    type="text" 
+                    placeholder="Enter your name" 
+                    title="First name only"
+                    pattern="[a-z A-Z]*" 
+                    autofocus="autofocus"
+                    required>
+                    
+                    <div class="contactForm__explanation_icons">
+                        <span class="icon5">✖</span>
+                        <span class="icon6">✓</span>
+                    </div>
+    
+                    <span class="contactForm__explanation">*Enter your first name</span>
 
-                    <span class="contactForm__explanation">*Write your first name</span>
+                    <div class="contactForm__error-text">
+                        *Enter your name, for example: John
+                    </div>
+
                 </div>
+
+
+
 
 
                 <div class="contactForm__lastName">

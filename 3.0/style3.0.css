@@ -310,9 +310,50 @@ a:link, a:visited  {
 
 /*validation start*/
 
- 
+    /*validation form firstName*/
 
-            /*validation form email*/
+            form .contactForm__firstName input{
+                /*width: 100%;*/
+                height: 35px;
+                border: 1px solid lightgrey;
+                border-radius: 12px;
+                padding-left: 15px;
+                outline: none;
+            }
+
+            form .contactForm__firstName .contactForm__explanation_icons{
+                position: absolute;
+                right: 3em;
+                top: 12.5em;
+            }
+
+            .contactForm__firstName .contactForm__explanation_icons span{
+                height: 25px;
+                width: 25px;
+                border: 2px solid;
+                border-radius: 50%;
+                line-height: 25px;
+                display: none;
+            }
+
+
+            /*validation icons*/
+            .contactForm__firstName .contactForm__explanation_icons span.icon5{
+                color: #e74c3c;
+                border-color: #e74c3c;
+            }
+
+            .contactForm__firstName .contactForm__explanation_icons span.icon6{
+                color: #27ae60;
+                border-color: #27ae60;
+            }
+            /*validation icons end*/
+
+    /*validation form firstName END*/
+
+
+
+    /*validation form email*/
 
             form .contactForm__email input{
                 /*width: 100%;*/
@@ -355,47 +396,45 @@ a:link, a:visited  {
 
 
 
-/*validation form Phone*/
+    /*validation form Phone*/
+
+            form .contactForm__phone input{
+                /*width: 100%;*/
+                height: 35px;
+                border: 1px solid lightgrey;
+                border-radius: 12px;
+                padding-left: 15px;
+                outline: none;
+            }
+
+            form .contactForm__phone .contactForm__explanation_icons{
+                position: absolute;
+                right: 3em;
+                top: 31.5em;
+            }
+
+            .contactForm__phone .contactForm__explanation_icons span{
+                height: 25px;
+                width: 25px;
+                border: 2px solid;
+                border-radius: 50%;
+                line-height: 25px;
+                display: none;
+            }
 
 
-form .contactForm__phone input{
-    /*width: 100%;*/
-    height: 35px;
-    border: 1px solid lightgrey;
-    border-radius: 12px;
-    padding-left: 15px;
-    outline: none;
-  }
+            /*validation icons*/
+            .contactForm__phone .contactForm__explanation_icons span.icon3{
+                color: #e74c3c;
+                border-color: #e74c3c;
+            }
 
-  form .contactForm__phone .contactForm__explanation_icons{
-    position: absolute;
-    right: 3em;
-    top: 31.5em;
-  }
+            .contactForm__phone .contactForm__explanation_icons span.icon4{
+                color: #27ae60;
+                border-color: #27ae60;
+            }
 
-  .contactForm__phone .contactForm__explanation_icons span{
-    height: 25px;
-    width: 25px;
-    border: 2px solid;
-    border-radius: 50%;
-    line-height: 25px;
-    display: none;
-  }
-
-
-  /*validation icons*/
-  .contactForm__phone .contactForm__explanation_icons span.icon3{
-    color: #e74c3c;
-    border-color: #e74c3c;
-  }
-
-  .contactForm__phone .contactForm__explanation_icons span.icon4{
-    color: #27ae60;
-    border-color: #27ae60;
-  }
-
-
-/*validation form Phone END*/
+    /*validation form Phone END*/
 
 
     /*notification of error*/
@@ -424,6 +463,8 @@ form .contactForm__phone input{
     /*notification of error end*/
 
 
+
+
     /* send buttom*/
         .contactForm__send_button{
             margin-top: 10px;
@@ -438,7 +479,7 @@ form .contactForm__phone input{
             font-weight: 500;
             letter-spacing: 1px;
             cursor: pointer;
-            display: none;
+            display: nne;
             transition: 0.3s;
         }
 
