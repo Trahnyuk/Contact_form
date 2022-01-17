@@ -575,7 +575,7 @@ a:link, a:visited  {
 
 
     /* send buttom*/
-        .contactForm__send_button{
+    form button.contactForm__send_button{
             margin-top: 10px;
             width: 100%;
             height: 45px;
@@ -588,11 +588,11 @@ a:link, a:visited  {
             font-weight: 500;
             letter-spacing: 1px;
             cursor: pointer;
-            display: nne;
+            display: none;
             transition: 0.3s;
         }
 
-        .contactForm__send_button:hover{
+        form button.contactForm__send_button:hover{
             background: #d62828;
             color:#eae2b7;
         }

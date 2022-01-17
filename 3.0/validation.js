@@ -25,7 +25,7 @@
               error.style.display = "block";
             }
             
-            if(firstName.value == " "){
+            if(firstName.value == ""){
               firstName.style.borderColor = "#eae2b7";
               firstName.style.background = "#eae2b7f";
               icon_firstName0.style.display = "none";
@@ -63,7 +63,7 @@
                 error.style.display = "block";
               }
               
-              if(lastName.value == " "){
+              if(lastName.value == ""){
                 lastName.style.borderColor = "#eae2b7";
                 lastName.style.background = "#eae2b7f";
                 icon_lastName0.style.display = "none";
@@ -94,6 +94,7 @@
              email.style.background = "#eafaf1";
              icon_email0.style.display = "none";
              icon_email1.style.display = "block";
+             error.style.display = "none";
            }
            
            else{
@@ -117,84 +118,47 @@
          //Phone validation of montact form
          function checkPhone()
          {
-          const email = document.querySelector("#phone");
+          const phone = document.querySelector("#phone");
           const icon_phone0 = document.querySelector(".icon_phone0");
           const icon_phone1 = document.querySelector(".icon_phone1");
           const error = document.querySelector(".contactForm__error_text_phone");
           
-          const btn = document.querySelector("contactForm__send_button");
+          const button = document.querySelector("button");
   
-           let regularExprationPhone = /^\d{3}\d{3}\d{3}$/;
+           let regularExprationPhone = /\d{3}\d{3}\d{3}/;
   
   
-             if(email.value.match(regularExprationPhone)){
-               email.style.borderColor = "#27ae60";
-               email.style.background = "#eafaf1";
+             if(phone.value.match(regularExprationPhone)){
+               phone.style.borderColor = "#27ae60";
+               phone.style.background = "#eafaf1";
                icon_phone0.style.display = "none";
                icon_phone1.style.display = "block";
                error.style.display = "none";
-               btn.style.display = "block";
+               button.style.display = "block";
              }
              
              else{
-               email.style.borderColor = "#e74c3c";
-               email.style.background = "#fceae9";
+               phone.style.borderColor = "#e74c3c";
+               phone.style.background = "#fceae9";
                icon_phone0.style.display = "block";
                icon_phone1.style.display = "none";
                error.style.display = "block";
-               btn.style.display = "none";
+               button.style.display = "none";
              }
              
-             if(email.value == ""){
-               email.style.borderColor = "#eae2b7";
-               email.style.background = "#eae2b7f";
+             if(phone.value == ""){
+               phone.style.borderColor = "#eae2b7";
+               phone.style.background = "#eae2b7f";
                icon_phone0.style.display = "none";
                icon_phone1.style.display = "none";
                error.style.display = "none";
-               btn.style.display = "none";
+               button.style.display = "none";
 
              }
          }
 
 
-         /*
+    
          
 
-          const email = document.querySelector("#phone");
-          const icon1 = document.querySelector(".icon3");
-          const icon2 = document.querySelector(".icon4");
-          const error = document.querySelector(".button");
-          
-          const btn = document.querySelector("contactForm__send_button");
-  
-           let regExp = /^\d{3}-\d{3}-\d{3}-\d{3}$/;
-  
-  
-             if(email.value.match(regExp)){
-               email.style.borderColor = "#27ae60";
-               email.style.background = "#eafaf1";
-               icon1.style.display = "none";
-               icon2.style.display = "block";
-               error.style.display = "none";
-               btn.style.display = "block";
-             }
-             
-             else{
-               email.style.borderColor = "#e74c3c";
-               email.style.background = "#fceae9";
-               icon1.style.display = "block";
-               icon2.style.display = "none";
-               error.style.display = "block";
-               btn.style.display = "none";
-             }
-             
-             if(email.value == ""){
-               email.style.borderColor = "#eae2b7";
-               email.style.background = "#eae2b7f";
-               icon1.style.display = "none";
-               icon2.style.display = "none";
-               error.style.display = "none";
-               btn.style.display = "none";
-             }
-           }
-           */
+         
