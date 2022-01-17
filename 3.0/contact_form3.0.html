@@ -40,9 +40,8 @@
                     <input onkeyup="checkFirstName()" 
                     id="firstName"
                     type="text" 
-                    placeholder="Enter your name" 
-                    title="First name only"
-                    pattern="[a-z A-Z]*" 
+                    placeholder="Enter your first name" 
+                    title="First name only" 
                     autofocus="autofocus"
                     required>
                     
@@ -53,7 +52,7 @@
     
                     <span class="contactForm__explanation">*Enter your first name</span>
 
-                    <div class="contactForm__error-text">
+                    <div class="contactForm__error_text_firtName">
                         *Enter your name, for example: John
                     </div>
 
@@ -65,10 +64,23 @@
 
                 <div class="contactForm__lastName">
                     <label>Last Name</label>
-                    <input type="text" placeholder="Enter your last name" name="lastName" title="Last name only"
-                    pattern="[a-z A-Z]*">
+                    <input onkeyup="checkLastName()"
+                    id="lastName" 
+                    type="text" 
+                    placeholder="Enter your last name"  
+                    title="Last name only"
+                    required>
                     
-                    <span class="contactForm__explanation">*Write your last name</span>
+                    <div class="contactForm__explanation_icons">
+                        <span class="icon7">✖</span>
+                        <span class="icon8">✓</span>
+                    </div>
+    
+                    <span class="contactForm__explanation">*Enter your last name</span>
+
+                    <div class="contactForm__error_text_lastName">
+                        *Enter your name, for example: Jonson
+                    </div>
                 </div>
 
         
@@ -89,7 +101,7 @@
     
                     <span class="contactForm__explanation">*Enter your email addres, for example: example@site.com</span>
 
-                    <div class="contactForm__error-text">
+                    <div class="contactForm__error_text_email">
                         *Enter your email addres, for example: example@site.com
                     </div>
     
@@ -115,8 +127,8 @@
 
                     <span class="contactForm__explanation">*Enter your phone number, for example: 000 000 000</span>
 
-                    <div class="contactForm__error-text">
-                        *Enter your phone number, for example: 777-777-777
+                    <div class="contactForm__error_text_phone">
+                        *Enter your phone number, for example: 000 000 000
                     </div>
 
                 </div>
