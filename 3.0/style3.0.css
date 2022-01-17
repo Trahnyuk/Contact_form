@@ -308,12 +308,12 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__firstName .contactForm__explanation_icons span.icon5{
+            .contactForm__firstName .contactForm__explanation_icons span.icon_firstName0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__firstName .contactForm__explanation_icons span.icon6{
+            .contactForm__firstName .contactForm__explanation_icons span.icon_firstName1{
                 color: #27ae60;
                 border-color: #27ae60;
             }
@@ -374,12 +374,12 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__lastName .contactForm__explanation_icons span.icon7{
+            .contactForm__lastName .contactForm__explanation_icons span.icon_lastName0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__lastName .contactForm__explanation_icons span.icon8{
+            .contactForm__lastName .contactForm__explanation_icons span.icon_lastName1{
                 color: #27ae60;
                 border-color: #27ae60;
             }
@@ -443,12 +443,12 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__email .contactForm__explanation_icons span.icon1{
+            .contactForm__email .contactForm__explanation_icons span.icon_email0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__email .contactForm__explanation_icons span.icon2{
+            .contactForm__email .contactForm__explanation_icons span.icon_email1{
                 color: #27ae60;
                 border-color: #27ae60;
             }
@@ -509,12 +509,12 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__phone .contactForm__explanation_icons span.icon3{
+            .contactForm__phone .contactForm__explanation_icons span.icon_phone0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__phone .contactForm__explanation_icons span.icon4{
+            .contactForm__phone .contactForm__explanation_icons span.icon_phone1{
                 color: #27ae60;
                 border-color: #27ae60;
             }
