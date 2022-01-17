@@ -65,6 +65,7 @@ footer{
 
 
 
+
 /* <main> Start*/
 .containerMain{
     border:6px solid #D62828;
@@ -74,7 +75,7 @@ footer{
     padding:5px 15px 10px 15px;
 }
 
-.contactForm__firstName, .contactForm__lastName, .contactForm__email, .contactForm__phone, .contactForm__textarea, .contactForm__send, label{
+.contactForm__firstName, .contactForm__lastName, .contactForm__email, .contactForm__phone, .contactForm__textarea, .contactForm__send{
     display: flex;
     flex-direction: column;
 }
@@ -174,6 +175,7 @@ input[type="reset"]:hover{
 
 
 
+
 /*input file*/
 .contactForm__file{
     display: flex;
@@ -186,7 +188,6 @@ input[type="reset"]:hover{
 
   input[type="file"]{
       height:3em;
-     
   }
 
   input[type=file]::file-selector-button{
@@ -213,7 +214,7 @@ input[type="reset"]:hover{
 }
 
 
-/* input submit*/
+/* input send buttom*/
 /*
 .contactForm__send{
     display: flex;
@@ -241,7 +242,7 @@ input[type=submit]:hover {
     font-size: 25px;
 }
 */
-/* input submit end*/
+/* input send buttom end*/
 
 /*<main> End*/
 
@@ -375,20 +376,21 @@ form .contactForm__email input{
     border: 2px solid;
     border-radius: 50%;
     line-height: 25px;
-    display: nne;
+    display: none;
   }
 
+
+  /*validation icons*/
   .contactForm__email .contactForm__explanation_icons span.icon1{
     color: #e74c3c;
     border-color: #e74c3c;
-    text-align: center;
   }
 
   .contactForm__email .contactForm__explanation_icons span.icon2{
     color: #27ae60;
     border-color: #27ae60;
-    text-align: center;
   }
+  /*validation icons end*/
 
 
   /*notification of error*/
@@ -400,7 +402,7 @@ form .contactForm__email input{
     padding: 8px;
     border-radius: 12px;
     user-select: none;
-    display: nne;
+    display: none;
   }
 
 
@@ -417,7 +419,7 @@ form .contactForm__email input{
 /*notification of error end*/
 
 
-  /* sedn buttom*/
+  /* send buttom*/
   .contactForm__send_button{
     margin-top: 10px;
     width: 100%;

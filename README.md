@@ -16,11 +16,11 @@ To Do list:
     - jak se sptravne vkladaji ruzne <meata>, <script> & <style> data a proc;[] 
 
 - <input type="submit"> 'Send'[-]:
-    - ma byt aktivni pouze po korektnim vyplneni formulare;[]
+    - ma byt aktivni pouze po korektnim vyplneni formulare;[in progres...]
 
 
 - <labele> [+/-]:
-    - zadat '*' z rozjasnenim - co ma udelat user;[]
+    - zadat '*' z rozjasnenim - co ma udelat user;[in progres...]
     - implementivat legendu stranky;[]
 
 
@@ -33,7 +33,7 @@ To Do list:
 
 
 - <script> [+/-]:
-    - pripojit pres JS validaci, místo <.alert>  jina funkce validace;[]
+    - pripojit pres JS validaci, místo <.alert>  jina funkce validace;[in progres...]
     - podivat se na true a false ve function (aby mohlo ukazovat validaci pro vsechny radky);[]
 
 - pokusit se vytvorit request ze stranky pres Consol s pomoci https://jsonplaceholder.typicode.com/;[-]
