@@ -222,36 +222,6 @@ input[type="reset"]:hover{
 }
 
 
-/* input send buttom*/
-/*
-.contactForm__send{
-    display: flex;
-    float: right;
-}
-
-input[type="submit"]{
-    background-color: #194866;
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    width:120px;
-    height:60px;
-    
-}
-
-input[type=submit]:hover {
-    background-color: #e7e7e7;
-    color:#000000;
-    transition: 1s;
-}
-
-  input[value="Send"]{
-    font-size: 25px;
-}
-*/
-/* input send buttom end*/
-
 /*<main> End*/
 
 
@@ -338,18 +308,110 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__firstName .contactForm__explanation_icons span.icon5{
+            .contactForm__firstName .contactForm__explanation_icons span.icon_firstName0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__firstName .contactForm__explanation_icons span.icon6{
+            .contactForm__firstName .contactForm__explanation_icons span.icon_firstName1{
                 color: #27ae60;
                 border-color: #27ae60;
             }
             /*validation icons end*/
 
+            form .contactForm__error_text_firtName{
+                position: relative;
+                margin: 15px 0 -5px 0;
+                background: #f77f00;
+                color: #000000;
+                padding: 8px;
+                border-radius: 12px;
+                user-select: none;
+                display: none;
+            }
+    
+    
+            form .contactForm__error_text_firtName:before{
+                position: absolute;
+                content: '';
+                height: 15px;
+                width: 15px;
+                background: #f77f00;
+                right: 20px;
+                top: -7px;
+                transform: rotate(45deg);
+            }
+
     /*validation form firstName END*/
+
+
+
+    /*validation form lastName*/
+
+            form .contactForm__lastName input{
+                /*width: 100%;*/
+                height: 35px;
+                border: 1px solid lightgrey;
+                border-radius: 12px;
+                padding-left: 15px;
+                outline: none;
+            }
+
+            form .contactForm__lastName .contactForm__explanation_icons{
+                position: absolute;
+                right: 3em;
+                top: 18.8em;
+            }
+
+            .contactForm__lastName .contactForm__explanation_icons span{
+                height: 25px;
+                width: 25px;
+                border: 2px solid;
+                border-radius: 50%;
+                line-height: 25px;
+                display: none;
+            }
+
+
+            /*validation icons*/
+            .contactForm__lastName .contactForm__explanation_icons span.icon_lastName0{
+                color: #e74c3c;
+                border-color: #e74c3c;
+            }
+
+            .contactForm__lastName .contactForm__explanation_icons span.icon_lastName1{
+                color: #27ae60;
+                border-color: #27ae60;
+            }
+            /*validation icons end*/
+
+            form .contactForm__error_text_lastName{
+                position: relative;
+                margin: 15px 0 -5px 0;
+                background: #f77f00;
+                color: #000000;
+                padding: 8px;
+                border-radius: 12px;
+                user-select: none;
+                display: none;
+            }
+    
+    
+            form .contactForm__error_text_lastName:before{
+                position: absolute;
+                content: '';
+                height: 15px;
+                width: 15px;
+                background: #f77f00;
+                right: 20px;
+                top: -7px;
+                transform: rotate(45deg);
+            }
+
+    /*validation form lastName END*/
+            
+
+
 
 
 
@@ -381,16 +443,39 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__email .contactForm__explanation_icons span.icon1{
+            .contactForm__email .contactForm__explanation_icons span.icon_email0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__email .contactForm__explanation_icons span.icon2{
+            .contactForm__email .contactForm__explanation_icons span.icon_email1{
                 color: #27ae60;
                 border-color: #27ae60;
             }
             /*validation icons end*/
+
+            form .contactForm__error_text_email{
+                position: relative;
+                margin: 15px 0 -5px 0;
+                background: #f77f00;
+                color: #000000;
+                padding: 8px;
+                border-radius: 12px;
+                user-select: none;
+                display: none;
+            }
+    
+    
+            form .contactForm__error_text_email:before{
+                position: absolute;
+                content: '';
+                height: 15px;
+                width: 15px;
+                background: #f77f00;
+                right: 20px;
+                top: -7px;
+                transform: rotate(45deg);
+            }
 
     /*validation form Email ENd*/
 
@@ -424,20 +509,44 @@ a:link, a:visited  {
 
 
             /*validation icons*/
-            .contactForm__phone .contactForm__explanation_icons span.icon3{
+            .contactForm__phone .contactForm__explanation_icons span.icon_phone0{
                 color: #e74c3c;
                 border-color: #e74c3c;
             }
 
-            .contactForm__phone .contactForm__explanation_icons span.icon4{
+            .contactForm__phone .contactForm__explanation_icons span.icon_phone1{
                 color: #27ae60;
                 border-color: #27ae60;
+            }
+            /*validation icons end*/
+
+            form .contactForm__error_text_phone{
+                position: relative;
+                margin: 15px 0 -5px 0;
+                background: #f77f00;
+                color: #000000;
+                padding: 8px;
+                border-radius: 12px;
+                user-select: none;
+                display: none;
+            }
+    
+    
+            form .contactForm__error_text_phone:before{
+                position: absolute;
+                content: '';
+                height: 15px;
+                width: 15px;
+                background: #f77f00;
+                right: 20px;
+                top: -7px;
+                transform: rotate(45deg);
             }
 
     /*validation form Phone END*/
 
 
-    /*notification of error*/
+    /*notification of error
         form .contactForm__error-text{
             position: relative;
             margin: 15px 0 -5px 0;
@@ -460,7 +569,7 @@ a:link, a:visited  {
             top: -7px;
             transform: rotate(45deg);
         }
-    /*notification of error end*/
+    notification of error end*/
 
 
 
