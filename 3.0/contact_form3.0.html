@@ -56,10 +56,11 @@
 
                 <div class="contactForm__email">
                     <label><span>Your e-mail <sup>*for example: example@site.com</sup></span></label>
-                    <input onkeyup="check()" 
+                    <input onkeyup="checkEmail()" 
                     id="email" 
                     type="email" 
-                    placeholder="Enter Email Address" required>
+                    placeholder="Enter Email Address" required
+                    title=" Enter email address">
     
                     <div class="contactForm__explanation_icons">
                         <span class="icon1">✖</span>
@@ -76,16 +77,30 @@
     
                
 
-                
-
 
                 <div class="contactForm__phone">
-                    <label>Your phone number</label>
-                    <input type="phone" placeholder="Enter your phone number +420-XXX-XXX-XXX" name="phone" title=" Enter phone number in this form: +420-XXX-XXX-XXX"
-                    pattern="\+\d{3}-\d{3}-\d{3}-\d{3}" minlength="16" maxlength="16">
-                    
-                    <span class="contactForm__explanation">*Write your phone number in this form:+420-XXX-XXX-XXX</span>
+                    <label><span>Your phone number<sup>**Write your phone number in this form:000 000 000</sup></span></label>
+                    <input 
+                    onkeyup="checkPhone()"
+                    id="phone"
+                    type="phone" 
+                    placeholder="Enter your phone number 000 000 000" required
+                    title=" Enter phone number"
+                    minlength="9" maxlength="9">
+
+                    <div class="contactForm__explanation_icons">
+                        <span class="icon3">✖</span>
+                        <span class="icon4">✓</span>
+                    </div>
+
+                    <span class="contactForm__explanation">*Enter your phone number, for example: 000 000 000</span>
+
+                    <div class="contactForm__error-text">
+                        *Enter your phone number, for example: 777-777-777
+                    </div>
+
                 </div>
+
 
 
 
