@@ -16,34 +16,34 @@ To Do list:
     - jak se sptravne vkladaji ruzne <meata>, <script> & <style> data a proc;[] 
 
 - <input type="submit"> 'Send'[-]:
-    - ma byt aktivni pouze po korektnim vyplneni formulare;[]
+    - ma byt aktivni pouze po korektnim vyplneni formulare;[in progres...]
 
 
 - <labele> [+/-]:
-    - zadat '*' z rozjasnenim - co ma udelat user;[]
+    - zadat '*' z rozjasnenim - co ma udelat user;[in progres...]
     - implementivat legendu stranky;[]
 
 
 - <input> uprava funkcionalu[+/-]:
-    - uprava <type="phone"> (zmenit format tel. cisla na XxxXxxXxx), zamezit zadavani pismena - jenom cisla [];
-    - uprava <type='email'> (upravit validaci, ev. zadat pattern="" ) 
+    - uprava <type="phone"> (zmenit format tel. cisla na XxxXxxXxx), zamezit zadavani pismena - jenom cisla;[]
+    - uprava <type='email'> (upravit validaci, ev. zadat pattern="" );[in progres...]
     
     
 - BEM metodologie  nadale zdokonalovat; [+/-]
 
 
 - <script> [+/-]:
-    - pripojit pres JS validaci, místo <.alert>  jina funkce validace;[]
-    - podivat se na true a false ve function (aby mohlo ukazovat validaci pro vsechny radky)[]
+    - pripojit pres JS validaci, místo <.alert>  jina funkce validace;[in progres...]
+    - podivat se na true a false ve function (aby mohlo ukazovat validaci pro vsechny radky);[]
 
-- pokusit se vytvorit request ze stranky pres Consol s pomoci https://jsonplaceholder.typicode.com/  [-]
+- pokusit se vytvorit request ze stranky pres Consol s pomoci https://jsonplaceholder.typicode.com/;[-]
 
 - obrazky []:
-    - seznamitse .webp[]
-    - svg [+]
+    - seznamitse .webp;[]
+    - svg; [+]
     
 - UI/UX[]
-    user friendly markup
+    user friendly markup; []
     
     
  
