@@ -94,6 +94,7 @@
              email.style.background = "#eafaf1";
              icon_email0.style.display = "none";
              icon_email1.style.display = "block";
+             error.style.display = "none";
            }
            
            else{
